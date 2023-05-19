@@ -25,13 +25,15 @@ Disable activity launch on theme:
   - This will now push your theme APK to your device without having to worry about build errors
 
 ## Step 1: Package Naming
-The FIRST thing you need to change is the package identifier (the name the app identifies as) to something more meaningful to you. Open up [build.gradle.kts](app/build.gradle.kts) and look for this line
+The FIRST thing you need to change is the package identifier (the name the app identifies as) to something more meaningful to you. Open up [build.gradle.kts](app/build.gradle.kts) and look for these lines
 ```kt
 applicationId = "substratum.theme.template"
+namespace = "substratum.theme.template"
 ```
 Change this to anything you want, for instance:
 ```kt
 applicationId = "com.yourname.themename"
+namespace = "com.yourname.themename"
 ```
 
 Change Package Name in the project structure (optional):
